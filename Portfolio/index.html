@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK SarKar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo-brand">
+                    <a href="#"><img src="/logo.png" class="logo">AV 1 <span>/</span>0</a>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>SK Sarkar</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ about ------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Front-End Developer with a strong foundation in web application design and
+                        development. My journey began with a B.Tech in Computer Science from Bengal College of
+                        Engineering, Durgapur, where I honed my skills in C & C++. <br>
+                    
+                        Over the years, I have expanded my expertise to include a wide array of languages and
+                        technologies. I am proficient in JavaScript, HTML, and CSS, which I use to create stunning and
+                        responsive web interfaces. My proficiency in these languages has been further enhanced through
+                        my current role, where I have been actively involved in designing web applications since 2021. <br>
+                    
+                        In my pursuit of excellence, I have also delved into the realm of data structures in C++, which
+                        has not only deepened my understanding of programming concepts but has also equipped me with the
+                        skills to tackle complex problems efficiently. <br>
+                    
+                        My journey has led me to explore various frameworks and libraries, with ReactJS being my
+                        front-end framework of choice. My current endeavors also include mastering NodeJS, which
+                        complements my skills in ReactJS, enabling me to build full-stack applications seamlessly. <br>
+                    
+                        I am currently enhancing my skills through a Full Stack Web Development course at Coding Nexus,
+                        where I am refining my abilities to create robust and user-friendly web applications. <br>
+                    
+                        In addition to my technical skills, I am a diligent and enthusiastic team player, always eager
+                        to collaborate and contribute to innovative projects. My goal is to leverage my expertise and
+                        passion for web development to create engaging and dynamic digital experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>Designing Web Application</li>
+                            <li><span>Languages</span><br>C & C++</li>
+                            <li><span>Script Language</span><br>JavaScript, HTML & CSS</li>
+                            <li><span>Front-End Frame Work</span><br>ReactJS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>HTML & CSS, JavaScript</li>
+                            <li><span>2022-Current</span><br>Designing Web/App</li>
+                            <li><span>2023-Current</span><br>Data Structure in C++</li>
+                            <li><span>2023-Current</span><br>NodeJS, ReactJS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>Full Stack Web Development from Coding Nexus</li>
+                            <li><span>2021</span><br>B.Tech form Bengal College of Engineering, Durgapur</li>
+                            <li><span>2015</span><br>12th from Dhakuria High School(H.S.), Chandpara</li>
+                            <li><span>2013</span><br>10th from Dhakuria High School(H.S.), Chandpara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- services ------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium id labore harum obcaecati
+                        molestiae sint tenetur cupiditate a? Autem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Structure</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium id labore harum obcaecati
+                        molestiae sint tenetur cupiditate a? Autem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node"></i>
+                    <h2>Server Environment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium id labore harum obcaecati
+                        molestiae sint tenetur cupiditate a? Autem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  ------------ portfolio ------------ -->
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/myWork/work-1.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Web-App</h3>
+                        <p>Using this web-app you can shopping various items</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/myWork/work-2.jpg">
+                    <div class="layer">
+                        <h3>To-Do List Web-App</h3>
+                        <p>You can listUp your daily work and also delete work which is not important or done</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/myWork/work-3.jpg">
+                    <div class="layer">
+                        <h3>Social Media Platform Clone</h3>
+                        <p>The app connects you to the others people around the world</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>

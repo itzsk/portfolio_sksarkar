@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #080808;
+    color: #fff;
+  }
+  
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/myPhoto.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    padding: 10px 10%;
+  }
+  
+  /* Responsive Navigation */
+  nav {
+    position: fixed;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #1c2b1c;
+    border-radius: 10px;
+    height: 80px;
+  }
+  
+  .logo-brand a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    color: #283cf6;
+    font-weight: 900;
+    cursor: default;
+  }
+  
+  .logo-brand a span {
+    color: #bc5c5c;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  nav ul {
+    display: flex; /* Change from inline-block for responsiveness */
+    list-style: none;
+    margin: 0; /* Remove margin for better spacing */
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Adjust margin for spacing between links */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Media Queries for Navigation on Smaller Screens */
+  @media only screen and (max-width: 768px) {
+    nav {
+      width: 100%; /* Navigation takes full width on mobile */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack links vertically on mobile */
+      align-items: center; /* Center links horizontally */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Adjust margin for spacing between links */
+    }
+  }
+  
+  .header-text {
+    margin-top: 20%;
+    font-size: 30px;
+  }
+  
+  .header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  
+  .header-text h1 span {
+    color: #ff004f;
+  }
+  
+  /* -------- about ---------- */
+  #about {
+    padding: 80px 0;
+    color: #ababab;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1 {
+    flex-basis: 35%;
+  }
+  
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+  
+  .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+  }
+  
+  .about-col-2 p {
+    text-align: justify;
+    line-height: 1.3;
+  }
+  
+  .tab-links {
+    margin-right: 30px; /* Adjust margin for spacing on mobile */
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Media query for smaller screens (adjust max-width as needed) */
+  @media only screen and (max-width: 768px) {
+    html, body {
+      background: #080808;
+      color: #fff;
+      height: 100vh; /* Optional: Set viewport height for some layouts */
+    }
+  }
+  
+  /* Your existing styles for sections like #header, #about, etc. */
+  #header {
+    width: 100%;
+    height: 100vh; /* Keep full height on larger screens */
+    background-image: url(/myPhoto.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Media Queries for Responsive Header */
+  @media only screen and (max-width: 768px) {
+    #header {
+      height: auto; /* Adjust height for smaller screens */
+      background-size: contain; /* Prevent image overflow */
+    }
+  }
+  .container {
+    padding: 10px 10%;
+  }
+  
+  /* Media Queries for Responsive Padding */
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 20px; /* Adjust padding values for mobile screens */
+    }
+  }
+  nav {
+    position: fixed;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #1c2b1c;
+    border-radius: 10px;
+    height: 80px;
+  }
+  
+  /* Media Queries for Responsive Navigation */
+  @media only screen and (max-width: 768px) {
+    nav {
+      width: 100%; /* Navigation takes full width on mobile */
+      justify-content: center; /* Center links horizontally on mobile */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack links vertically on mobile */
+      align-items: center; /* Center links vertically on mobile */
+      margin: 0; /* Remove margin for better spacing on mobile */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Adjust margin for spacing between links on mobile */
+    }
+  }
+  .logo-brand a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: xx-large; /* Adjust font size for mobile (optional) */
+    color: #283cf6;
+    font-weight: 900;
+    cursor: default;
+  }
+  
+  /* Media Queries for Responsive Navigation (existing) */
+  @media only screen and (max-width: 768px) {
+    /* Existing responsive styles for navigation on mobile */
+  }
+  .logo-brand a span {
+    color: #bc5c5c;
+  }
+  
+  /* Media Queries for Responsive Navigation (existing) */
+  @media only screen and (max-width: 768px) {
+    /* Existing responsive styles for navigation on mobile */
+  }
+  .logo {
+    width: 80px;
+  }
+  
+  /* Media Query for Responsive Logo Width */
+  @media only screen and (max-width: 768px) {
+    .logo {
+      width: 50px; /* Adjust width for mobile screens (optional) */
+    }
+  }
+  nav ul {
+    display: flex; /* Change from inline-block for responsiveness */
+    list-style: none;
+    margin: 0; /* Remove margin for better spacing */
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Adjust margin for spacing between links on mobile */
+  }
+  
+  /* Media Queries for Responsive Navigation (existing) */
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Stack links vertically on mobile */
+      align-items: center; /* Center links vertically on mobile */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Adjust margin for spacing between links on mobile */
+    }
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size for mobile (optional) */
+    position: relative;
+  }
+  
+  /* Media Queries for Responsive Navigation (existing) */
+  @media only screen and (max-width: 768px) {
+    /* Existing responsive styles for navigation on mobile */
+  
+    nav ul li a {
+      font-size: 16px; /* Example: Adjust font size for mobile */
+    }
+  }
+  nav ul li a::after {
+    content: '';
+    width: 100%; /* Adjust width for mobile (optional) */
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  /* Media Queries for Responsive Navigation (existing) */
+  @media only screen and (max-width: 768px) {
+    /* Existing responsive styles for navigation on mobile */
+  
+    /* Optional underline width adjustment */
+    nav ul li a::after {
+      width: 80%; /* Example: Adjust width for mobile */
+    }
+  }
+        
